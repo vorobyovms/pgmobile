@@ -17,6 +17,10 @@
 		875A5C66243F89A100FA1A9C /* UserPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A5C65243F89A100FA1A9C /* UserPage.swift */; };
 		87B8C0D12433F6F2004633D0 /* Auth2ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8C0D02433F6F2004633D0 /* Auth2ViewerViewController.swift */; };
 		87E54F8A24670B66001BD3CF /* MainMenyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54F8924670B66001BD3CF /* MainMenyTableViewController.swift */; };
+		87E54FB32468CB36001BD3CF /* ServiceAuthPersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FB22468CB35001BD3CF /* ServiceAuthPersonal.swift */; };
+		87E54FB52468CB7F001BD3CF /* ServiceCheckSmsPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */; };
+		87E54FBC2468CFCD001BD3CF /* UserPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FBB2468CFCD001BD3CF /* UserPageController.swift */; };
+		87E54FBF2468D281001BD3CF /* ServiceInfoAboutUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		875A5C65243F89A100FA1A9C /* UserPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPage.swift; sourceTree = "<group>"; };
 		87B8C0D02433F6F2004633D0 /* Auth2ViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth2ViewerViewController.swift; sourceTree = "<group>"; };
 		87E54F8924670B66001BD3CF /* MainMenyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenyTableViewController.swift; sourceTree = "<group>"; };
+		87E54FB22468CB35001BD3CF /* ServiceAuthPersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuthPersonal.swift; sourceTree = "<group>"; };
+		87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCheckSmsPass.swift; sourceTree = "<group>"; };
+		87E54FBB2468CFCD001BD3CF /* UserPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageController.swift; sourceTree = "<group>"; };
+		87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfoAboutUser.swift; sourceTree = "<group>"; };
 		99E0AAA06B9B669D53B372D1 /* Pods-PG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG.release.xcconfig"; path = "Target Support Files/Pods-PG/Pods-PG.release.xcconfig"; sourceTree = "<group>"; };
 		F8F2A97069FBB45844C29854 /* Pods_PG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,13 +58,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8733285F244526B000B939C9 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		8749135022E4C6DF002AFA05 = {
 			isa = PBXGroup;
 			children = (
@@ -78,21 +79,66 @@
 		8749135B22E4C6DF002AFA05 /* PG */ = {
 			isa = PBXGroup;
 			children = (
-				873328602445278D00B939C9 /* SWRevealViewController.h */,
-				873328612445279000B939C9 /* SWRevealViewController.m */,
+				87E54FBD2468D1DF001BD3CF /* Services */,
+				87E54FBA2468CF92001BD3CF /*  UserMenu */,
+				87E54FB92468CC6E001BD3CF /* EnterSMSPage */,
+				87E54FB82468CC43001BD3CF /* TelephonPage */,
+				87E54FB72468CC06001BD3CF /* Framework */,
 				8749135C22E4C6DF002AFA05 /* AppDelegate.swift */,
-				8733285F244526B000B939C9 /* New Group */,
-				8749135E22E4C6DF002AFA05 /* ViewController.swift */,
 				8749136022E4C6DF002AFA05 /* Main.storyboard */,
 				87E54F8924670B66001BD3CF /* MainMenyTableViewController.swift */,
 				8749136322E4C6E5002AFA05 /* Assets.xcassets */,
 				8749136522E4C6E5002AFA05 /* LaunchScreen.storyboard */,
 				8749136822E4C6E5002AFA05 /* Info.plist */,
-				87B8C0D02433F6F2004633D0 /* Auth2ViewerViewController.swift */,
 				8733285B2445246300B939C9 /* PG-Bridging-Header.h */,
 				875A5C65243F89A100FA1A9C /* UserPage.swift */,
 			);
 			path = PG;
+			sourceTree = "<group>";
+		};
+		87E54FB72468CC06001BD3CF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				873328612445279000B939C9 /* SWRevealViewController.m */,
+				873328602445278D00B939C9 /* SWRevealViewController.h */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		87E54FB82468CC43001BD3CF /* TelephonPage */ = {
+			isa = PBXGroup;
+			children = (
+				8749135E22E4C6DF002AFA05 /* ViewController.swift */,
+			);
+			path = TelephonPage;
+			sourceTree = "<group>";
+		};
+		87E54FB92468CC6E001BD3CF /* EnterSMSPage */ = {
+			isa = PBXGroup;
+			children = (
+				87B8C0D02433F6F2004633D0 /* Auth2ViewerViewController.swift */,
+			);
+			name = EnterSMSPage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		87E54FBA2468CF92001BD3CF /*  UserMenu */ = {
+			isa = PBXGroup;
+			children = (
+				87E54FBB2468CFCD001BD3CF /* UserPageController.swift */,
+			);
+			name = " UserMenu";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		87E54FBD2468D1DF001BD3CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				87E54FB22468CB35001BD3CF /* ServiceAuthPersonal.swift */,
+				87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */,
+				87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D1019038E7D50CD36876BC0A /* Frameworks */ = {
@@ -228,10 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E54FB32468CB36001BD3CF /* ServiceAuthPersonal.swift in Sources */,
 				87B8C0D12433F6F2004633D0 /* Auth2ViewerViewController.swift in Sources */,
 				87E54F8A24670B66001BD3CF /* MainMenyTableViewController.swift in Sources */,
 				875A5C66243F89A100FA1A9C /* UserPage.swift in Sources */,
+				87E54FBC2468CFCD001BD3CF /* UserPageController.swift in Sources */,
 				8749135F22E4C6DF002AFA05 /* ViewController.swift in Sources */,
+				87E54FBF2468D281001BD3CF /* ServiceInfoAboutUser.swift in Sources */,
+				87E54FB52468CB7F001BD3CF /* ServiceCheckSmsPass.swift in Sources */,
 				8749135D22E4C6DF002AFA05 /* AppDelegate.swift in Sources */,
 				873328622445279000B939C9 /* SWRevealViewController.m in Sources */,
 			);

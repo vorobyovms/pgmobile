@@ -111,13 +111,13 @@ class Auth2ViewerViewController: UIViewController {
                                 let token_str:String = String(format: "%@", token as! CVarArg)
                                 print("token in string format = ",token_str)
                                 DispatchQueue.main.async {
+                                    
                                     //UserPage
                                     let viewController1  = self.storyboard!.instantiateViewController(withIdentifier: "UserPage") as! SWRevealViewController;
                                     viewController1.modalPresentationStyle = .fullScreen;
-                                   //viewController1.token = token as! String
+                                   // viewController1.frontViewController.tokem
+                                    
                                 self.present(viewController1, animated: false, completion: nil)
-                                    //self.performSegue(withIdentifier: "yourSegueIdentifier", sender: self)
-                                    //self.showDetailViewController(viewController1,sender: (Any).self)
                                 }
                             } else {
                                 print("access denied")
