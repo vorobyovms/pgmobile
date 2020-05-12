@@ -16,9 +16,13 @@ class UserPageController: UIViewController {
     @IBOutlet weak var PressMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print("token = ",self.token)
-
-        //self.revealViewController()?.r
+        let storage = LocalStorage()
+        let token = storage.GetToken()
+        let personal_id = storage.GetPersonalID()
+        let telephone = storage.GetTelephone()
+        print("token = ",token)
+        print("personal_id = ",personal_id)
+        print("telephone = ",telephone)
         PressMenu.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
 

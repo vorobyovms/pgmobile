@@ -29,7 +29,9 @@ class Auth2ViewerViewController: UIViewController {
 
     
     @IBAction func GoToCRM(_ sender: Any) {
+        
         let pass:String = SMSCode.text!
+        
         print("SMS Code = ",pass)
         if(pass != "") {
             print("Otpravlyaem zapros na avtorizaciyu")
@@ -110,13 +112,19 @@ class Auth2ViewerViewController: UIViewController {
                                 let token = good_answer["token"]
                                 let token_str:String = String(format: "%@", token as! CVarArg)
                                 print("token in string format = ",token_str)
+                                let personal_id = good_answer["personal_id"]
+                                print("personal_id = ",personal_id as Any)
+                                let personal_id_convert = (good_answer["personal_id"]! as! CLong)
+                                print("personal_id_convert = ",personal_id_convert)
+                                
+                                
                                 DispatchQueue.main.async {
-                                    
                                     //UserPage
                                     let viewController1  = self.storyboard!.instantiateViewController(withIdentifier: "UserPage") as! SWRevealViewController;
-                                    viewController1.modalPresentationStyle = .fullScreen;
-                                   // viewController1.frontViewController.tokem
-                                    
+                                    viewController1.modalPresentationStyle = .fullScreen;  //Структура сохранения данных пользователя
+                                    let storage = LocalStorage()
+                                    storage.SaveData(id: personal_id_convert, token: token_str, telephone: self.tellogin)
+  
                                 self.present(viewController1, animated: false, completion: nil)
                                 }
                             } else {

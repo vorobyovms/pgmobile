@@ -21,6 +21,7 @@
 		87E54FB52468CB7F001BD3CF /* ServiceCheckSmsPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */; };
 		87E54FBC2468CFCD001BD3CF /* UserPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FBB2468CFCD001BD3CF /* UserPageController.swift */; };
 		87E54FBF2468D281001BD3CF /* ServiceInfoAboutUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */; };
+		87E54FC42469A50F001BD3CF /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E54FC32469A50F001BD3CF /* LocalStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCheckSmsPass.swift; sourceTree = "<group>"; };
 		87E54FBB2468CFCD001BD3CF /* UserPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageController.swift; sourceTree = "<group>"; };
 		87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfoAboutUser.swift; sourceTree = "<group>"; };
+		87E54FC32469A50F001BD3CF /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		99E0AAA06B9B669D53B372D1 /* Pods-PG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PG.release.xcconfig"; path = "Target Support Files/Pods-PG/Pods-PG.release.xcconfig"; sourceTree = "<group>"; };
 		F8F2A97069FBB45844C29854 /* Pods_PG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				87E54FB22468CB35001BD3CF /* ServiceAuthPersonal.swift */,
 				87E54FB42468CB7F001BD3CF /* ServiceCheckSmsPass.swift */,
 				87E54FBE2468D281001BD3CF /* ServiceInfoAboutUser.swift */,
+				87E54FC32469A50F001BD3CF /* LocalStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E54FC42469A50F001BD3CF /* LocalStorage.swift in Sources */,
 				87E54FB32468CB36001BD3CF /* ServiceAuthPersonal.swift in Sources */,
 				87B8C0D12433F6F2004633D0 /* Auth2ViewerViewController.swift in Sources */,
 				87E54F8A24670B66001BD3CF /* MainMenyTableViewController.swift in Sources */,
